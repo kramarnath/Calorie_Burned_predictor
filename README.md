@@ -24,7 +24,7 @@ This project compares two regression models — **Random Forest** and **Gradient
 | Model | MAE | MSE | R² Score |
 |---|---|---|---|
 | Random Forest | *(add your value)* | *(add your value)* | *(add your value)* |
-| Gradient Boosting | *(add your value)* | *(add your value)* | *(add your value)* |
+| Gradient Boosting | *(8.442765509451121)* | *(141.60539932412985)* | *(0.9649126075716636)* |
 
 > Random Forest was selected for deployment based on lower MAE and higher R² score.
 
