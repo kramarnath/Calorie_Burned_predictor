@@ -1,10 +1,10 @@
-# 🔥 Calorie Burn Predictor
+# Calorie Burn Predictor
 
 A machine learning web app that predicts calories burned during exercise based on personal attributes and workout duration. Built with **Scikit-learn** and **Streamlit**.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project compares two regression models — **Random Forest** and **Gradient Boosting** — to predict calorie expenditure. The best-performing model is deployed via a clean Streamlit web interface.
 
@@ -19,7 +19,7 @@ This project compares two regression models — **Random Forest** and **Gradient
 
 ---
 
-## 🧠 Models Compared
+## Models Compared
 
 | Model | MAE | MSE | R² Score |
 |---|---|---|---|
@@ -30,7 +30,7 @@ This project compares two regression models — **Random Forest** and **Gradient
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 calorie-burn-predictor/
@@ -47,7 +47,7 @@ calorie-burn-predictor/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -74,7 +74,7 @@ Then open your browser at `http://localhost:8501`
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source:** [Kaggle — Exercise and Calories Dataset](https://www.kaggle.com/datasets/fmendes/fmendesdat263xdemo)
 - `exercise.csv` — Gender, Age, Height, Weight, Duration, Heart Rate, Body Temp
@@ -84,7 +84,7 @@ Then open your browser at `http://localhost:8501`
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Python 3.10+**
 - **Scikit-learn** — Model training & evaluation
@@ -94,19 +94,19 @@ Then open your browser at `http://localhost:8501`
 
 ---
 
-## 📈 Sample Output
+## Sample Output
 
 > For a 22-year-old Male, 172 cm, 68 kg, exercising for 30 minutes:
 > **Predicted Calories Burned: ~245 kcal**
 
 ---
 
-## 👤 Author
+## Author
 
 **Amarnath K R**  
 [GitHub](https://github.com/your-username)
 ---
 
-## 📄 License
+## License
 
 This project is open source under the [MIT License](LICENSE).
