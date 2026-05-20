@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ML model (binary file, regenerate with training script)
+*.pkl
+
+# Datasets (too large for GitHub)
+*.csv
