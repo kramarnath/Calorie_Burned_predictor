@@ -1,6 +1,6 @@
 # Calorie Burn Predictor
 
-A machine learning web app that predicts calories burned during exercise based on personal attributes and workout duration. Built with **Scikit-learn** and **Streamlit**.
+A Simple machine learning web app that predicts calories burned during exercise based on personal attributes and workout duration. Built with **Scikit-learn** and **Streamlit**.
 
 ---
 
@@ -51,7 +51,7 @@ calorie-burn-predictor/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/calorie-burn-predictor.git
+git clone https://github.com/kramarnath/calorie-burn-predictor.git
 cd calorie-burn-predictor
 ```
 
@@ -69,10 +69,6 @@ python calorie_burn_randomForest.py
 ```bash
 streamlit run app.py
 ```
-
-Then open your browser at `http://localhost:8501`
-
----
 
 ## Dataset
 
@@ -104,7 +100,7 @@ Then open your browser at `http://localhost:8501`
 ## Author
 
 **Amarnath K R**  
-[GitHub](https://github.com/your-username)
+[GitHub](https://github.com/kramarnath)
 ---
 
 ## License
