@@ -1,10 +1,10 @@
-# Calories Burn Prediction Using Machine Learning
+# Calories Burned Prediction Using XGBoost
 
 ## Project Overview
 
 This project predicts calories burned during exercise using Machine Learning regression models.
 
-The project compares multiple ensemble learning algorithms and selects the best-performing model for deployment.
+The project compares multiple ensemble regression learning algorithms and selects the best-performing model for deployment.
 
 The final deployed model uses **XGBoost Regressor** because it achieved the best prediction accuracy.
 
