@@ -141,18 +141,9 @@ Each tree makes predictions independently, and the final prediction is obtained 
 
 ## Feature Importance
 
-<table>
-  <tr>
-    <td>
-      <p align="center"><b>Random Forest Feature Importance</b></p>
-      <img src="models_comparison/plots/rf_feature_imp.png" width="400">
-    </td>
-    <td>
-      <p align="center"><b>Second Model Feature Importance</b></p>
-      <img src="models_comparison/plots/rf_feature_importance.png" width="400">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="models_comparison/plots/rf_feature_importance.png" width="400">
+</p>
 
 ### Observation
 
@@ -184,18 +175,9 @@ Each new tree attempts to correct the errors made by previous trees.
 
 ## Feature Importance
 
-<table>
-  <tr>
-    <td>
-      <p align="center"><b>Gradient Boosting Regressor Feature Importance</b></p>
-      <img src="models_comparison/plots/gb_feature_imp.png" width="400">
-    </td>
-    <td>
-      <p align="center"><b>Gradient Boosting Regressor Feature Importance</b></p>
-      <img src="models_comparison/plots/gb_feature_importance.png" width="400">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="models_comparison/plots/gb_feature_importance.png" width="400">
+</p>
 
 ### Observation
 
@@ -236,18 +218,9 @@ It improves traditional Gradient Boosting by:
 
 ## Feature Importance
 
-<table>
-  <tr>
-    <td>
-      <p align="center"><b>XGBoost Feature Importance</b></p>
-      <img src="models_comparison/plots/xgb_feature_imp.png" width="400">
-    </td>
-    <td>
-      <p align="center"><b>Second Model Feature Importance</b></p>
-      <img src="models_comparison/plots/xgb_feature_importance.png" width="400">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="models_comparison/plots/xgb_feature_importance.png" width="400">
+</p>
 
 ### Observation
 
