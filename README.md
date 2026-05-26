@@ -142,7 +142,7 @@ Each tree makes predictions independently, and the final prediction is obtained 
 ## Feature Importance
 
 <p align="center">
-  <img src="models_comparison/plots/rf_feature_importance.png" width="400">
+  <img src="models_comparison/plots/rf_feature_importance.png" width="350">
 </p>
 
 ### Observation
@@ -176,7 +176,7 @@ Each new tree attempts to correct the errors made by previous trees.
 ## Feature Importance
 
 <p align="center">
-  <img src="models_comparison/plots/gb_feature_importance.png" width="400">
+  <img src="models_comparison/plots/gb_feature_importance.png" width="350">
 </p>
 
 ### Observation
@@ -219,7 +219,7 @@ It improves traditional Gradient Boosting by:
 ## Feature Importance
 
 <p align="center">
-  <img src="models_comparison/plots/xgb_feature_importance.png" width="400">
+  <img src="models_comparison/plots/xgb_feature_importance.png" width="350">
 </p>
 
 ### Observation
@@ -281,7 +281,7 @@ XGBoost had the lowest RMSE, indicating fewer large prediction errors.
 # R² Comparison
 
 <p align="center">
-  <img src="models_comparison/plots/r2_comparison.png" width="350">
+  <img src="models_comparison/plots/r_square_comparison.png" width="350">
 </p>
 
 ### Interpretation
@@ -299,7 +299,7 @@ Since XGBoost achieved the best performance, detailed analysis was performed on 
 # Actual vs Predicted Plot
 
 <p align="center">
-  <img src="deployment_app/plots/actual_vs_predicted.png" width="450">
+  <img src="deployment_model/plots/xgb_Actual_vs_Predicted_Plot.png" width="450">
 </p>
 
 ### Interpretation
@@ -311,7 +311,7 @@ Most points aligned closely with the diagonal reference line, indicating highly 
 # Residual Plot
 
 <p align="center">
-  <img src="deployment_app/plots/residual_plot.png" width="450">
+  <img src="deployment_model/plots/xgb_residual_Plot.png" width="450">
 </p>
 
 ### Interpretation
