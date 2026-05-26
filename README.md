@@ -1,108 +1,125 @@
-# Calorie Burn Predictor
-
-A Simple machine learning web app that predicts calories burned during exercise based on personal attributes and workout duration. Built with **Scikit-learn** and **Streamlit**.
-
----
+# Calories Burn Prediction Using Machine Learning
 
 ## Project Overview
 
-This project compares two regression models — **Random Forest** and **Gradient Boosting** — to predict calorie expenditure. The best-performing model is deployed via a clean Streamlit web interface.
+This project predicts calories burned during exercise using Machine Learning models.
 
-### Features used for prediction:
-| Feature | Description |
-|---|---|
-| Gender | Male / Female |
-| Age | Age in years |
-| Height | Height in cm |
-| Weight | Weight in kg |
-| Duration | Exercise duration in minutes |
+The project compares multiple regression algorithms:
+- Random Forest Regressor
+- Gradient Boosting Regressor
+- XGBoost Regressor
+
+The final deployed model uses XGBoost because it achieved the best performance.
 
 ---
 
-## Models Compared
+## Dataset
 
-| Model | MAE | MSE | R² Score |
-|---|---|---|---|
-| Random Forest | *(8.85331323015873)* | *(160.31123916878246)* | *(0.9602776208659054)* |
-| Gradient Boosting | *(8.442765509451121)* | *(141.60539932412985)* | *(0.9649126075716636)* |
+Dataset used:
+- exercise.csv
+- calories.csv
 
-> Random Forest was selected for deployment based on lower MAE and higher R² score.
+Source:
+Kaggle Calories Burn Prediction Dataset
 
 ---
 
-## Project Structure
+## Features Used
 
-```
-calorie-burn-predictor/
-│
-├── app.py                          # Streamlit web app
-├── calorie_burn_randomForest.py    # RF model training script
-├── calorie_burn_gradientRegressor.py  # GB model training script
-├── calorie_model.pkl               # Saved trained model
-├── exercise.csv                    # Exercise dataset
-├── calories.csv                    # Calories dataset
-├── requirements.txt                # Python dependencies
-└── README.md
-```
+- Gender
+- Age
+- Height
+- Weight
+- Duration
+- Heart Rate
+- Body Temperature
+- BMI (Engineered Feature)
+
+---
+
+## Feature Engineering
+
+BMI was added using:
+
+BMI = Weight / Height²
+
+This improved prediction performance.
+
+---
+
+## Machine Learning Models
+
+### 1. Random Forest Regressor
+Ensemble learning using multiple decision trees.
+
+### 2. Gradient Boosting Regressor
+Sequential boosting model improving previous errors.
+
+### 3. XGBoost Regressor
+Advanced boosting algorithm with regularization and optimized tree learning.
+
+---
+
+## Model Evaluation Metrics
+
+The following metrics were used:
+
+- MAE (Mean Absolute Error)
+- MSE (Mean Squared Error)
+- RMSE (Root Mean Squared Error)
+- R² Score
+
+---
+
+## Final Results
+
+| Model | MAE | RMSE | R² |
+|------|------|------|------|
+| Random Forest | 1.7524 | 2.7448 | 0.9981 |
+| Gradient Boosting | 1.0489 | 1.4854 | 0.9994 |
+| XGBoost | 0.9286 | 1.3212 | 0.9995 |
+
+XGBoost achieved the best performance.
+
+---
+
+## Visualizations
+
+The project includes:
+- Correlation Heatmap
+- Feature Importance Graph
+- Actual vs Predicted Plot
+- Model Comparison Graph
+
+---
+
+## Deployment
+
+The final model was deployed using:
+- Streamlit
+- Streamlit Community Cloud
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- Matplotlib
+- Seaborn
+- Streamlit
 
 ---
 
 ## How to Run
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/kramarnath/calorie-burn-predictor.git
-cd calorie-burn-predictor
-```
+Install requirements:
 
-### 2. Install dependencies
-```bash
 pip install -r requirements.txt
-```
 
-### 3. Train the model (generates `calorie_model.pkl`)
-```bash
-python calorie_burn_randomForest.py
-```
+Run Streamlit app:
 
-### 4. Launch the Streamlit app
-```bash
 streamlit run app.py
-```
-
-## Dataset
-
-- **Source:** [Kaggle — Exercise and Calories Dataset](https://www.kaggle.com/datasets/fmendes/fmendesdat263xdemo)
-- `exercise.csv` — Gender, Age, Height, Weight, Duration, Heart Rate, Body Temp
-- `calories.csv` — Calories burned per session
-
-> Heart Rate and Body Temp were dropped since they are not available before a workout.
-
----
-
-## Tech Stack
-
-- **Python 3.10+**
-- **Scikit-learn** — Model training & evaluation
-- **Pandas / NumPy** — Data processing
-- **Matplotlib / Seaborn** — Visualizations
-- **Streamlit** — Web app deployment
-
----
-
-## Sample Output
-
-> For a 22-year-old Male, 172 cm, 68 kg, exercising for 30 minutes:
-> **Predicted Calories Burned: ~245 kcal**
-
----
-
-## Author
-
-**Amarnath K R**  
-[GitHub](https://github.com/kramarnath)
----
-
-## License
-
-This project is open source under the [MIT License](LICENSE).
