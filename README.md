@@ -238,7 +238,6 @@ These were identified as the most influential features for calorie prediction.
 The following evaluation metrics were used:
 
 - MAE (Mean Absolute Error)
-- MSE (Mean Squared Error)
 - RMSE (Root Mean Squared Error)
 - R² Score
 
@@ -286,13 +285,17 @@ XGBoost had the lowest RMSE, indicating fewer large prediction errors.
 
 ### Interpretation
 
-XGBoost achieved the highest R² score, meaning it explained almost all variance in the dataset.
+All models have approximately equal R Square values
 
 ---
 
 # Final Model Analysis
 
-Since XGBoost achieved the best performance, detailed analysis was performed on the final model.
+<p align="center">
+  <img src="models_comparison/plots/model_comparison.png" width="400">
+</p>
+
+Since XGBoost achieved the best performance among the three, detail analysis was performed on the final model.
 
 ---
 
