@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # LOAD MODEL
-model = pickle.load(open("calorie_model.pkl", "rb"))
+model = pickle.load(open("deployment_model/calorie_model.pkl", "rb"))
 
 # TITLE
 st.title("Calories Burn Prediction")
