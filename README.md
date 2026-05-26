@@ -92,6 +92,12 @@ This helped improve model performance.
 
 The correlation heatmap shows relationships between features.
 
+## Heatmap
+
+<p align="center">
+  <img src="models_comparison/plots/correlation_heatmap.png" width="450">
+</p>
+
 ### Key Observations
 
 - Duration had extremely high correlation with Calories.
@@ -102,14 +108,6 @@ The correlation heatmap shows relationships between features.
 ### Interpretation
 
 This indicates that exercise duration and workout intensity are the most important factors affecting calorie burn.
-
----
-
-## Heatmap
-
-<p align="center">
-  <img src="models_comparison/plots/heatmap.png" width="450">
-</p>
 
 ---
 
@@ -143,9 +141,18 @@ Each tree makes predictions independently, and the final prediction is obtained 
 
 ## Feature Importance
 
-<p align="center">
-  <img src="models_comparison/plots/rf_importance.png" width="450">
-</p>
+<table>
+  <tr>
+    <td>
+      <p align="center"><b>XGBoost Feature Importance</b></p>
+      <img src="models_comparison/plots/rf_feature_imp.png" width="400">
+    </td>
+    <td>
+      <p align="center"><b>Second Model Feature Importance</b></p>
+      <img src="models_comparison/plots/rf_feature_impportance.png" width="400">
+    </td>
+  </tr>
+</table>
 
 ### Observation
 
@@ -177,9 +184,18 @@ Each new tree attempts to correct the errors made by previous trees.
 
 ## Feature Importance
 
-<p align="center">
-  <img src="models_comparison/plots/gb_importance.png" width="450">
-</p>
+<table>
+  <tr>
+    <td>
+      <p align="center"><b>XGBoost Feature Importance</b></p>
+      <img src="models_comparison/plots/gb_feature_imp.png" width="400">
+    </td>
+    <td>
+      <p align="center"><b>Second Model Feature Importance</b></p>
+      <img src="models_comparison/plots/gb_feature_impportance.png" width="400">
+    </td>
+  </tr>
+</table>
 
 ### Observation
 
@@ -220,9 +236,18 @@ It improves traditional Gradient Boosting by:
 
 ## Feature Importance
 
-<p align="center">
-  <img src="models_comparison/plots/xgb_importance.png" width="450">
-</p>
+<table>
+  <tr>
+    <td>
+      <p align="center"><b>XGBoost Feature Importance</b></p>
+      <img src="models_comparison/plots/xgb_feature_imp.png" width="400">
+    </td>
+    <td>
+      <p align="center"><b>Second Model Feature Importance</b></p>
+      <img src="models_comparison/plots/xgb_feature_impportance.png" width="400">
+    </td>
+  </tr>
+</table>
 
 ### Observation
 
