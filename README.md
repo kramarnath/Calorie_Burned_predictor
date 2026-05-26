@@ -95,7 +95,7 @@ The correlation heatmap shows relationships between features.
 ## Heatmap
 
 <p align="center">
-  <img src="models_comparison/plots/correlation_heatmap.png" width="450">
+  <img src="models_comparison/plots/Correlation_heatmap.png" width="450">
 </p>
 
 ### Key Observations
@@ -149,7 +149,7 @@ Each tree makes predictions independently, and the final prediction is obtained 
     </td>
     <td>
       <p align="center"><b>Second Model Feature Importance</b></p>
-      <img src="models_comparison/plots/rf_feature_impportance.png" width="400">
+      <img src="models_comparison/plots/rf_feature_importance.png" width="400">
     </td>
   </tr>
 </table>
@@ -192,7 +192,7 @@ Each new tree attempts to correct the errors made by previous trees.
     </td>
     <td>
       <p align="center"><b>Second Model Feature Importance</b></p>
-      <img src="models_comparison/plots/gb_feature_impportance.png" width="400">
+      <img src="models_comparison/plots/gb_feature_importance.png" width="400">
     </td>
   </tr>
 </table>
@@ -244,7 +244,7 @@ It improves traditional Gradient Boosting by:
     </td>
     <td>
       <p align="center"><b>Second Model Feature Importance</b></p>
-      <img src="models_comparison/plots/xgb_feature_impportance.png" width="400">
+      <img src="models_comparison/plots/xgb_feature_importance.png" width="400">
     </td>
   </tr>
 </table>
