@@ -314,7 +314,7 @@ Most points aligned closely with the diagonal reference line, indicating highly 
 # Residual Plot
 
 <p align="center">
-  <img src="deployment_model/plots/xgb_residual_Plot.png" width="450">
+  <img src="deployment_model/plots/xgb_residual_plot.png" width="450">
 </p>
 
 ### Interpretation
