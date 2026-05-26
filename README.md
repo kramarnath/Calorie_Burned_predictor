@@ -144,7 +144,7 @@ Each tree makes predictions independently, and the final prediction is obtained 
 <table>
   <tr>
     <td>
-      <p align="center"><b>XGBoost Feature Importance</b></p>
+      <p align="center"><b>Random Forest Feature Importance</b></p>
       <img src="models_comparison/plots/rf_feature_imp.png" width="400">
     </td>
     <td>
@@ -187,11 +187,11 @@ Each new tree attempts to correct the errors made by previous trees.
 <table>
   <tr>
     <td>
-      <p align="center"><b>XGBoost Feature Importance</b></p>
+      <p align="center"><b>Gradient Boosting Regressor Feature Importance</b></p>
       <img src="models_comparison/plots/gb_feature_imp.png" width="400">
     </td>
     <td>
-      <p align="center"><b>Second Model Feature Importance</b></p>
+      <p align="center"><b>Gradient Boosting Regressor Feature Importance</b></p>
       <img src="models_comparison/plots/gb_feature_importance.png" width="400">
     </td>
   </tr>
