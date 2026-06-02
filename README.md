@@ -354,7 +354,7 @@ The final model was deployed using:
 # Steamlit Page
 
 <p align="center">
-  <img src="deployment_model/images/steamlit_img.png" width="450">
+  <img src="deployment_model/images/stremlit_img.png" width="450">
 </p>
 
 ---
