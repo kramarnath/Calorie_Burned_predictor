@@ -350,6 +350,12 @@ The final model was deployed using:
 
 - Streamlit
 - Streamlit Community Cloud
+- 
+# Steamlit Page
+
+<p align="center">
+  <img src="deploment_model/images/steamlit_img.png" width="450">
+</p>
 
 ---
 
