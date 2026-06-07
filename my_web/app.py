@@ -13,14 +13,15 @@ def home():
     if request.method == 'POST':
 
         # 1. Capture inputs directly from HTML form fields
-        gender = float(request.form.get('gender', 1))
+        gender = float(request.form.get('gender', 1)) 
         age = float(request.form.get('age', 25))
         height_cm = float(request.form.get('height', 170))
         weight_kg = float(request.form.get('weight', 70))
         duration = float(request.form.get('duration', 30))
         heart_rate = float(request.form.get('heart_rate', 80))
         body_temp = float(request.form.get('body_temp', 37))
-
+        # initial inputs will get replaced by the user inputs
+        
         # 2. Store them exactly as entered to preserve UI state
         user_inputs = {
             'gender': gender,
@@ -36,12 +37,12 @@ def home():
         height_m = height_cm / 100.0
         bmi = weight_kg / (height_m ** 2)
 
-        # 3. Predict using the 8 features
+        # 4. Predict using the 8 features
         features = [gender, age, height_cm, weight_kg, duration, heart_rate, body_temp, bmi]
         prediction = model.predict([features])
         calories_prediction = round(float(prediction[0]), 2)
 
-    # 4. Pass the calculated prediction variable directly into your HTML page template
+    # 5. Pass the calculated prediction variable directly into your HTML page template
     return render_template('index.html', calories=calories_prediction, inputs=user_inputs)
 
 if __name__ == '__main__':
