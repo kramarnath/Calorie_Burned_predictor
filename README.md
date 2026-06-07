@@ -10,6 +10,39 @@ The final deployed model uses **XGBoost Regressor** because it achieved the best
 
 ---
 
+## Repository Structure
+
+```
+calorie-predictor/
+│
+├── deployment_model/            ←  Streamlit app
+│   ├── plots/
+│   ├── images/
+│   ├── app.py
+│   ├── calorie_model.pkl
+│   └── requirements.txt
+│
+├── models_comparison/           ← model training and comparison
+│   ├── plots/
+│   ├── compare_models.py
+│   ├── gradient_boosting_model.py
+│   ├── random_forest_model.py
+│   └── xg_boost_model.py
+│
+├── my_web/                         ← Flask + HTML/CSS/JS Web app
+│   ├── app.py
+│   ├── images
+│   ├── calorie_model.pkl
+│   ├── templates/index.html
+│   ├── static/style.css
+│   ├── static/index.js
+│   └── requirements.txt
+│
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
 # Problem Statement
 
 Predict the number of calories burned based on physiological and exercise-related parameters such as:
@@ -46,7 +79,10 @@ The dataset contains exercise information and corresponding calories burned.
 - Matplotlib
 - Seaborn
 - Streamlit
-
+- flsk
+- html
+- css
+- javascript
 ---
 
 # Machine Learning Workflow
@@ -346,12 +382,11 @@ Final selected model:
 
 # Deployment
 
-The final model was deployed using:
+## v1.0 — Streamlit
 
-- Streamlit
-- Streamlit Community Cloud
-- 
-# Steamlit Page
+The model was deployed using Streamlit and hosted on Streamlit Community Cloud.
+
+## Streamlit Page
 
 <p align="center">
   <img src="deployment_model/images/stremlit_img.png" width="450">
@@ -359,9 +394,36 @@ The final model was deployed using:
 
 ---
 
+## v2.0 — Custom Web Application (Flask + HTML/CSS/JS)
+
+A custom web application was built from scratch to replace the Streamlit interface.
+
+The backend is a Flask REST API that loads the trained XGBoost model and returns predictions.
+The frontend is built using HTML, CSS, and JavaScript with the Fetch API to communicate with the Flask backend.
+
+### Web App Page
+
+<p align="center">
+  <img src="my_web/images/my_web_image.png" width="450">
+</p>
+
+---
+
 # How to Run Locally
 
-## Install Requirements
+## 1 — Streamlit
 
 ```bash
-pip install -r requirements.txt
+pip install -r deployment_model/requirements.txt
+streamlit run deployment_model/app.py
+```
+
+## 2 — Flask Web Application
+
+```bash
+pip install -r web/requirements.txt
+python web/app.py
+```
+
+Then open `web/index.html` in your browser.
+The app will be running at `http://localhost:5000`
