@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calories Burn Prediction</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <script src="../static/index.js"></script>
+    </head>
+
+    <body>
+    <div class="container">
+        <h1>Calories Burn Predictor</h1>
+
+        <form method="post" action="/">
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="0" {% if inputs and inputs['gender'] == 0 %}selected{% endif %}>Male</option>
+                    <option value="1" {% if inputs and inputs['gender'] == 1 %}selected{% endif %}>Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <div class="input-box">
+                    <input type="number" name="age" value="{{ inputs['age'] if inputs else 25 }}">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Height (cm)</label>
+                <div class="input-box">
+                    <input type="number" name="height" value="{{ inputs['height'] if inputs else 170 }}">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Weight (kg)</label>
+                <div class="input-box">
+                    <input type="number" name="weight" value="{{ inputs['weight'] if inputs else 70 }}">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Duration (minutes)</label>
+                <div class="input-box">
+                    <input type="number" name="duration" value="{{ inputs['duration'] if inputs else 30 }}">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Heart Rate</label>
+                <div class="input-box">
+                    <input type="number" name="heart_rate" value="{{ inputs['heart_rate'] if inputs else 80 }}">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Body Temperature</label>
+                <div class="input-box">
+                    <input type="number" step="0.1" name="body_temp" value="{{ inputs['body_temp'] if inputs else 37.0 }}">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <button type="submit" class="predict-btn">Predict Calories</button>
+        </form>
+
+        {% if calories is not none %}
+        <div class="result-card">
+            <p class="result-label">Estimated Calories Burned</p>
+            <p class="result-value">{{ calories }} kcal</p>
+        </div>
+        {% endif %}
+    </div>
+
+    </body>
+
+</html>
